@@ -9,56 +9,50 @@ public class Main {
     private static double side;
     private static final double pi = 3.14;
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
-        System.out.println(Calc.Test());
-            /*
-            System.out.println("Please enter length of the side: ");
+    //    System.out.println(Calc.Test());
 
-            System.out.println(sqaureArea());
+       Word.Word();
 
-            System.out.println("Please enter circle radius: ");
-            System.out.println(circleArea());
+//        getArea();
 
-            System.out.println("Is my Sqaure is the Circle? Answer: " +isSqInCircle());
-            System.out.println("Is my Circle is the Sqaure? Answer: " +isCircleinSq());
-            */
+
+  //      System.out.println("Is my Sqaure is the Circle? Answer: " + isSqInCircle());
+  //      System.out.println("Is my Circle is the Sqaure? Answer: " + isCircleinSq());
+
     }
 
-    public static double sqaureArea() {
+    public static void getArea() {
         Scanner read = new Scanner(System.in);
         double sqArea;
+        double crclArea;
+        System.out.println("Please enter length of the side: ");
+
         try {
             side = read.nextDouble();
         } catch (Exception e) {
             System.out.println("Only digits are acceptable!");
         }
         sqArea = side * side;
-        return sqArea;
-    }
 
-    public static double circleArea() throws Exception {
-        Scanner read = new Scanner(System.in);
-        double crclArea;
+        System.out.println(sqArea);
+        System.out.println("Please enter circle radius: ");
         try {
             radius = read.nextDouble();
         } catch (Exception e) {
             System.out.println("Only digits are acceptable!");
         }
         crclArea = pi * radius * radius;
-        return crclArea;
+        System.out.println(crclArea);
     }
 
     public static boolean isSqInCircle() {
-        if (Math.sqrt(2) * side < radius * 2)
-            return true;
-        else return false;
+        return Math.sqrt(2) * side < radius * 2;
     }
 
     public static boolean isCircleinSq() {
-        if (radius * 2 < side)
-            return true;
-        else return false;
+        return radius * 2 < side;
 
     }
 }

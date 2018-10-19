@@ -6,11 +6,19 @@ public class Calc {
     public static boolean Test(){
 
         int res=0;
-        System.out.println("Please enter the first on 20 digits: ");
+        System.out.println("Please enter the first digit: ");
         Scanner read = new Scanner(System.in);
         int frst = read.nextInt();
         //int frst = 10;
-        int[] mass = new int[20];
+
+        System.out.println("Please enter the last digit: ");
+        int last = read.nextInt();
+        if (frst>=last || frst+10<=last){
+            System.out.println("The difference between your digits should be at least 10");
+
+        }
+
+        int[] mass = new int[last];
 
         System.out.println("Thanks! Your list of digits is: ");
         for (int i = 0 ; i < mass.length; i++) {
