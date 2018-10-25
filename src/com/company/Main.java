@@ -11,8 +11,8 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        Task4.Word();
-
+Task5.Tasks();
+//                Task4.Word();
         //System.out.println(Calc.Test());
 
 //       getArea();
