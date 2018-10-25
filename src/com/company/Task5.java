@@ -13,13 +13,8 @@ public class Task5 {
         System.out.println("Please enter something: ");
         List<String> list;
         list = new ArrayList<>();
-        while (true){
+        while (read.toString() != ("1")){
 
-            if (read.equals("run")) {
-                break;
-            }
-            else
-            {
             System.out.println("Please enter something: ");
                 read.toString();
                 list.add(read.nextLine());
@@ -27,5 +22,6 @@ public class Task5 {
 
 
         }
+
     }
-}}
+}
