@@ -11,21 +11,19 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        System.out.println(Calc.Test());
-            /*
-            System.out.println("Please enter length of the side: ");
+Task5.Tasks();
+//                Task4.Word();
+        //System.out.println(Calc.Test());
 
-            System.out.println(sqaureArea());
+//       getArea();
 
-            System.out.println("Please enter circle radius: ");
-            System.out.println(circleArea());
+//            System.out.println("Is my Sqaure is the Circle? Answer: " +isSqInCircle());
+//            System.out.println("Is my Circle is the Sqaure? Answer: " +isCircleinSq());
 
-            System.out.println("Is my Sqaure is the Circle? Answer: " +isSqInCircle());
-            System.out.println("Is my Circle is the Sqaure? Answer: " +isCircleinSq());
-            */
     }
 
-    public static double sqaureArea() {
+    private static void getArea(){
+        System.out.println("Please enter length of the side: ");
         Scanner read = new Scanner(System.in);
         double sqArea;
         try {
@@ -33,20 +31,18 @@ public class Main {
         } catch (Exception e) {
             System.out.println("Only digits are acceptable!");
         }
-        sqArea = side * side;
-        return sqArea;
-    }
+        sqArea=side*side;
+        System.out.println(sqArea);
 
-    public static double circleArea() throws Exception {
-        Scanner read = new Scanner(System.in);
+        System.out.println("Please enter circle radius: ");
         double crclArea;
-        try {
-            radius = read.nextDouble();
-        } catch (Exception e) {
+        try { radius = read.nextDouble();}
+        catch (Exception e) {
             System.out.println("Only digits are acceptable!");
         }
-        crclArea = pi * radius * radius;
-        return crclArea;
+        crclArea=pi*radius*radius;
+        System.out.println(crclArea);
+        //return sqArea;
     }
 
     public static boolean isSqInCircle() {
