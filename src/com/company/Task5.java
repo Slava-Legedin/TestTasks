@@ -1,3 +1,5 @@
+package com.company;
+
 import java.lang.reflect.Array;
 import java.util.*;
 
@@ -17,7 +19,7 @@ public class Task5 {
             System.out.printf("Please enter Priority from 1 to 3: ");
 
             Integer pr = scanner.nextInt();
-            if (pr >= 1 && pr <= 3) {
+            if (pr >= 1 && pr <= 4) {
                 prio.add(pr);
             }
             else {
@@ -28,7 +30,7 @@ public class Task5 {
             prio.add(scanner.next());
 */
             System.out.printf("Please enter ###");
-            if (scanner.next().equals("test")) {
+            if (scanner.next().equals("stop")) {
                 break;
             }
 

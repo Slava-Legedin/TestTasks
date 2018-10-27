@@ -11,7 +11,11 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-Task5.Tasks();
+        DailyTask.CompHours();
+
+
+
+//Task5.Tasks();
 //                Task4.Word();
         //System.out.println(Calc.Test());
 
