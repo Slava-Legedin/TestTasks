@@ -30,7 +30,7 @@ tasks.add(dt);
         }
 
 for (DailyTask dt: tasks){
-    System.out.println(dt.name);
+    System.out.println(dt.comp);
 }
     //    tasks.forEach(System.out::println);
     }
