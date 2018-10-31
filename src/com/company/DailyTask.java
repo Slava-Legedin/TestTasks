@@ -12,8 +12,9 @@ public class DailyTask {
 
     public DailyTask(String nm, String pr, String cmp) {
         this.name = nm;
-        this.comp = CompHours(cmp);
         this.prio = Priority();
+        this.comp = CompHours(cmp);
+
 
     }
 
@@ -28,11 +29,11 @@ public class DailyTask {
 
     public static Integer CompHours(String s) {
         Integer hours = 0;
-        if (s.equals("HIGH")) {
+        if (s.equals("HARD") || Integer.valueOf(s)==1) {
              hours =4;}
-            else if (s.equals("MIDDLE")) {
+            else if (s.equals("MEDIUM") || Integer.valueOf(s)==2) {
                 hours = 2;}
-                if (s.equals("LOW")) {
+                if (s.equals("EASY") || Integer.valueOf(s) == 3) {
                     hours = 1;}
 
 
