@@ -29,11 +29,11 @@ public class DailyTask {
 
     public static Integer CompHours(String s) {
         Integer hours = 0;
-        if (s.equals("HARD") || Integer.valueOf(s)==1) {
+        if (s.equals("HARD") || s.equals("1")) {
              hours =4;}
-            else if (s.equals("MEDIUM") || Integer.valueOf(s)==2) {
+            else if (s.equals("MEDIUM") || s.equals("2")) {
                 hours = 2;}
-                if (s.equals("EASY") || Integer.valueOf(s) == 3) {
+                if (s.equals("EASY") || s.equals("3")) {
                     hours = 1;}
 
 
