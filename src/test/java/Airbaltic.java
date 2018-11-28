@@ -71,7 +71,7 @@ public class Airbaltic {
         untilElementClickable(By.id("id_rad_0_0_0_EC")).click();
         //driver.findElement()
 //        Assert.assertEquals(untilElementVisible(By.cssSelector("td.additional>a")).getText(), "BT403");
-        Assert.assertEquals(untilElementClickable(By.xpath(ForTest.)).getText(),"BT403");
+        Assert.assertEquals(untilElementClickable(By.xpath(ForTest.date)).getText(),"BT403");
 //        String num  =driver.findElement(By.cssSelector("table.fsel-table a")).getText();
 //        System.out.println(num);
         Assert.assertEquals(untilElementVisible(By.cssSelector("span.date")).getText(), ForTest.date);
